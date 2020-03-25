@@ -10,10 +10,7 @@ Dark Blue:		#2E2A39
 */
 
 .navbar {
-  list-style-type: none;
-  margin: 0px;
-  padding: 0px;
-  height: 60px;
+  height: 60px;;
   width: 100%;
   top: 0;
   background-color: rgba(255, 216, 91, 1);
@@ -22,32 +19,25 @@ Dark Blue:		#2E2A39
   overflow: hidden;
   z-index: 10;
 }
-
-#tripster-logo-nav{
-    float: left;
-}
-
-#tripster-logo-nav a{
-    padding-left: 30px;
-    padding-right: 6vmax;
-    padding-top: 0px;
-    padding-bottom: 7px;
-    font-size: 30px;
-    text-shadow: 0px 2px 5px rgba(0,0,0,0.15);
-    letter-spacing: 0px;
-}
-
-.nav-button{
+.nav-item {
     float: left;
     padding-top: 0px;
     padding-bottom: 7px;
-    font-size: 30px;
+    font-size: 22px;
     padding-right: 0px;
     text-shadow: 0px 2px 5px rgba(0,0,0,0.15);
-    letter-spacing: 0px;
-    box-shadow: -10px 0px 10px rgba(0,0,0,0.05);
 }
-
+.nav-left {
+    box-shadow: -10px 0px 10px rgba(0,0,0,0.05);
+    width: 170px;
+}
+.nav-right {
+    width: 200px;
+}
+.logo{
+    font-size: 30px;
+    width: 240px;
+}
 .navbar a{
     text-decoration: none;
     text-transform: capitalize;
@@ -55,20 +45,15 @@ Dark Blue:		#2E2A39
     text-shadow: 0px 2px 3px rgba(0,0,0,0.1);
     display: flex;
     margin: auto;
-    font-size: 22px;
     padding: 16px;
     padding-top: 10px;
     color: white;
-    font-weight: 500;
     letter-spacing: 1px;
     -webkit-text-stroke: 0.5px white;
 }
 
-.nav-button a{
-    padding-right: 4.5vw;
-}
 
-.right-nav-buttons{
+.nav-right {
     position: relative;
     text-align: center;
     height: 100%;
@@ -82,15 +67,13 @@ Dark Blue:		#2E2A39
 
 
 /* MOBILE STYLES / STYLES FOR SCREENS BELOW WIDTH = 600 */
-@media only screen and (max-width: 600px) {
-  #tripster-logo-nav a {
-    padding-left: 10px;
-    padding-right: 8px;
-  }
+@media only screen and (max-width: 768px) {
+    .navbar {
+        height: 100%;
+    }
 
-  .navbar a{
-      font-size: 12px;
-      padding-top: 20px;
-      padding-bottom: 20px;
-  }
+    .navbar a { 
+        box-shadow: 0;
+        text-align: left;
+    }
 }

@@ -5,25 +5,19 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>Tripster: Create Your Trip</title>
-        <link rel="stylesheet" type="text/css" href="../CSS/navBar.css">
         <link href="https://fonts.googleapis.com/css?family=Simonetta&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="../CSS/style.css">
-		<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- <link rel="stylesheet" type="text/css" href="../CSS/style.css"> -->
+        <link rel="stylesheet" type="text/css" href="../CSS/navBar.css">
+        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        
 	</head>
 
     <body>
-        <!-- - - - - - - Navigation Bar Elements - - - - - - - - - - - - - - - - - - - - -->
-		<ul class="navbar">
-            <li id="tripster-logo-nav" class="nav-button"><a href="..\index.html">Tripster</a></li>
-            <li class="nav-button"><a href="create.html">Create</a></li>
-            <li class="nav-button"><a href="#browse">Browse</a></li>
-            <li class="nav-button"><a href="#profile">Profile</a></li>
-			<li class="right-nav-buttons"><a href="Login.html">Sign in</a></li>
-	        <li class="right-nav-buttons"><a href="Registration.html">Create Account</a></li>
-		</ul>
-        <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
         <div class = "page-wrapper">
             <!-- Main content will act as a container to hold the page elements so that it can all be shifted down to account for the nav bar -->
             <div class="main-content">
@@ -48,26 +42,18 @@
                         </div>
                         <div id="directions-panel"></div>
                     </div>
+        <!-- Navigation Bar using bootstrap ---------------- -->
+        <nav class="navbar navbar-dark navbar-expand-md">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-controls="collapsibleNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <div class="navbar-nav">
+                    <a class="nav-item logo nav-left" href="../index.html">Tripster</a>
+                    <a class="nav-item nav-link nav-left active" href="#">Create</a>
+                    <a class="nav-item nav-link nav-left" href="#">Browse</a>
+                    <a class="nav-item nav-link nav-left" href="#">Profile</a>
                 </div>
-
-                <div id="routes-container">
-                    <div class="route-option">
-                        <!-- Later on this will likely be created dynamically using javascript, based on the generation code -->
-                        <!-- For now it will serve as a placeholder and template for what the dynamically created one will look like -->
-                        <h1>Route Option #1</h1>
-                    </div>
-                    <div class="route-option">
-                        <h1>Route Option #2</h1>
-                    </div>
-                    <div class="route-option">
-                        <h1>Route Option #3</h1>
-                    </div>
-                </div>
-            </div>
-
-            <!-- - - - - - - Footer Elements- - - - - - - - - - - - - - - - - - - - - - - - -->
-            <div class="footer">
-                <p>This is where footer stuff will go</p>
             </div>
             <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
         </div>
